@@ -1,0 +1,168 @@
+
+
+@keyframes changer{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/login1.jpg") no-repeat ;
+    background-size: cover;
+    background-position: center;
+    animation: changer 7s linear infinite;
+}
+.container {
+    width:400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 1.7rem;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+}
+
+form {
+    width: 95%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.inp {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+    border: 0.8px solid rgb(255, 255, 255);
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+}
+
+.inp input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0.7rem;
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: transparent;
+}
+
+.inp input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: aliceblue;
+    font-style: italic;
+}
+
+label p {
+    padding-left: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+transy {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+    color:aliceblue;
+} 
+
+button {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(80px);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+button:hover{
+    transform: scale(95%);
+    transition: ease-in-out;
+    background-color: #ffffffa4;
+    transition-duration: 0.5s;
+}
+
+.focus {
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(0.98);
+}
+
+.signup p {
+    display: inline;
+}
+
+.signup a {
+    cursor: pointer;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.hide {
+   
+    display: none;
+}
+@media(max-width: 290px){
+    .container{
+        width:100%;
+        height: auto;
+        border: none;
+        border-radius: 0;
+    }
+    body{
+        backdrop-filter: blur(8px);
+    }
+}

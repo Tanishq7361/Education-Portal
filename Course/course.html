@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="course.css"/>
+    <title>Courses</title>
+</head>
+<body>
+    <header data-aos="fade-down" data-aos-duration="1400">
+        <div class="thumbnail">
+            <img src="../images/thumbnail.jpg" height="60px" onclick="location.href='../index.html'" style="border-radius: 50%;" data-aos="fade-down-right" data-aos-duration="1800">
+        </div>
+        <div class="navbar">
+            <div class="navlinks">
+                <a href="../index.html">HOME</a>
+            </div>
+            <div class="navlinks">
+                <a href="course.html">COURSES</a>
+            </div>
+            <div class="navlinks">
+                <a href="../About/about.html">ABOUT US</a>
+            </div>
+            <div class="navlinks">
+                <a href="../Review/review.html">REVIEWS</a>
+            </div>
+            <div class="navlinks">
+                <a href="../Contact/contact.html">CONTACT US</a>
+            </div>
+            <button class="logout">Login</button>
+        </div>
+    </header>
+
+    <div class="title" data-aos="zoom-in" data-aos-duration="1400"  data-aos-delay="1000">
+        <h1>Our Courses</h1>
+    </div>
+    <div class="bar" data-aos="fade-right" data-aos-duration="1400"  data-aos-delay="2000">
+        <input type="text" id="searchBar" placeholder="Search courses...">
+        <select class="sort" id="sortOptions">
+            <option>Sort Courses</option>
+            <option value="A-Z">Sort by Title(A-Z)</option>
+            <option value="Z-A">Sort by Title(Z-A)</option>
+            <option value="high-low">Sort by Price(High-Low)</option>
+            <option value="low-high">Sort by Price(Low-High)</option>
+        </select>        
+        <button class="coins">
+             Coins:1000
+        </button>
+    </div>
+
+    <div class="main">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="3000">
+            <div class="box" 
+            data-name="Java" data-price="969"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>JAVA</h1>
+                <p>East or west java is the best</p>
+                <h3>Coins: 969</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="Cpp" data-price="999"
+            data-topics='["Introduction To C++", "C++", "C++", "C++", "C++"]'>
+                <h1>C++</h1>
+                <p>Hype aise hi thodi hai😏😏</p>
+                <h3>Coins: 999++</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="Python" data-price="777"
+            data-topics='["Introduction To Python", "Python", "Python", "Python", "Python"]'>
+                <h1>PYTHON</h1>
+                <p>AI/ML kaha se sikhega mere pass hi ana padega</p>
+                <h3>Coins: 777</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="React" data-price="199"
+            data-topics='["Introduction To React", "Java", "Java", "Java", "Java"]'>
+                <h1>REACT-JS</h1>
+                <p>BACKEND KA DEVTA KAHETE HAI MUJE</p>
+                <h3>Coins: 199</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="Trading" data-price="420"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>TRADING</h1>
+                <p>Harshad Mehta hamara alumni hai </p>
+                <h3>Coins: 420</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="Calculus" data-price="0"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>CALCULUS</h1>
+                <p>JEE ka paper yahi se nikalata hai</p>
+                <h3>FREE</h3>
+                <div class="btns"><button class="buy">Enroll</button></div>
+            </div>
+            <div class="box" 
+            data-name="DSA" data-price="700"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>DSA</h1>
+                <p>Placement lena hai to aa jao</p>
+                <h3>Coins: Thala*100</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="Cyber" data-price="0"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>CYBER-SECURITY</h1>
+                <p>Money heist me meri hi strory thi 😁</p>
+                <h3>Free</h3>
+                <div class="btns"><button class="buy">Enroll</button></div>
+            </div>
+            <div class="box" 
+            data-name="Electronics" data-price="299"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>Electronics</h1>
+                <p>Streamline your accounting processes with XERO.</p>
+                <h3>Coins: 299</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="UPSC" data-price="1999"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>UPSC</h1>
+                <p>Placement nahi laga to aa jao varna unemployed ka tag lag jayega</p>
+                <h3>Coins: 1999</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="Quantum Computing" data-price="1000"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>Quantum Computing</h1>
+                <p>Beyond your thoughts</p>
+                <h3>Coins: 1000</h3>
+                <div class="btns"><button class="buy">Buy with Coins</button></div>
+            </div>
+            <div class="box" 
+            data-name="History" data-price="0"
+            data-topics='["Introduction To Java", "Java", "Java", "Java", "Java"]'>
+                <h1>HISTORY</h1>
+                <p>Humare jamane ki batein</p>
+                <h3>Free</h3>
+                <div class="btns"><button class="buy">Enroll</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="restbtn">
+    <button id="resetBtn">Reset Everything</button>
+    </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="links">
+                <div class="part">
+                    <img src="../images/thumbnail.jpg" height="200px" width="200px" style="border-radius: 50%;" onclick="location.href='../index.html'">
+                    <p class="foot-title">Aura Institute</p>
+                </div>
+                <div class="part">
+                    <p class="foot-title">Quick Links</p>
+                    <a href="../index.html">Home</a>
+                    <a href="../About/about.html">About Us</a>
+                    <a href="course.html">Courses</a>
+                    <a href="../Review/review.html">Reviews</a>
+                    <a href="../Contact/contact.html">Contact Us</a>
+                </div>
+                <div class="part">
+                    <p class="foot-title">Contact Us</p>
+                    <p>Email: Auraedu777@gmail.com</p>
+                    <p>Phone: +91 9898441664</p>
+                    <p>Address: D/301, Sahjanand Avenue, Naranpura, Ahmedabad</p>
+                </div>
+            </div>
+            <div class="follow">
+                <p class="foot-title">Follow Us !!</p>
+                <a href="https://github.com/Tanishq7361"><img src="../images/github.jpg" alt="GitHub" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://www.linkedin.com/in/tanishq-shah-43825431b/"><img src="../images/linkedin.png" alt="LinkedIn" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://www.instagram.com/tanishq_7307?igsh=cDQ0OHZkODM3d3Jj"><img src="../images/instagram.png" alt="Instagram" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://x.com/"><img src="../images/tweet.jpeg" alt="X(Tweeter)" height="35px" width="35px" style="border-radius: 50%;"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&#169; 2025 Aura Education Institute Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="course.js"></script>
+</body>
+</html>

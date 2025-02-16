@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css" />
+    
+    <title>Login & Sign Up</title>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="heading">
+            <h1>Login</h1>
+        </div>
+        <form>
+            <div class="name">
+                <label for="name">
+                    <p class="transy">Name</p>
+                    <div class="inp">
+                        <input type="text" id="name" name="name" placeholder="Enter name">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </label>
+            </div>
+            <div class="email">
+                <label for="email">
+                    <p class="transy">Email Address</p>
+                    <div class="inp">
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </label>
+            </div>
+            <div class="password">
+                <label for="password">
+                    <p class="transy">Password</p>
+                    <div class="inp">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                </label>
+            </div>
+            <div class="confirmpass hide">
+                <label for="confirmpass">
+                    <p class="transy">Confirm Password</p>
+                    <div class="inp">
+                        <input type="password" id="confirmpass" name="confirmpass" placeholder="Confirm Password">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                </label>
+            </div>
+            <div class="submit">
+                <button type="button" id="submit">Login</button>
+            </div>
+        </form>
+
+        <div class="signup">
+            <p>Don't have an account? </p><a>Sign Up</a>
+        </div>
+    </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

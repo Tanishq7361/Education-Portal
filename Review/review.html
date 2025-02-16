@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="review.css"/>
+    <title>Reviews</title>
+</head>
+<body>
+    <header data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">
+        <div class="thumbnail">
+            <img src="../images/thumbnail.jpg" height="60px" onclick="location.href='../index.html'" style="border-radius: 50%;" data-aos="fade-down-right" data-aos-duration="1800">
+        </div>
+        <div class="navbar">
+            <div class="navlinks">
+                <a href="../index.html">HOME</a>
+            </div>
+            <div class="navlinks">
+                <a href="../Course/course.html">COURSES</a>
+            </div>
+            <div class="navlinks">
+                <a href="../About/about.html">ABOUT US</a>
+            </div>
+            <div class="navlinks">
+                <a href="review.html">REVIEWS</a>
+            </div>
+            <div class="navlinks">
+                <a href="../Contact/contact.html">CONTACT US</a>
+            </div>
+            <button class="logout">Login</button>
+        </div>
+    </header>
+  <div data-aos="fade-right" data-aos-duration="1400">
+     <div class="main">
+         <div class="cool">
+            <h1  data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="1200">
+                Reviews
+            </h1>
+            <h3  data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="1400">
+                Home / Our Reviews
+            </h3>
+            </div>
+     </div>
+
+     <div class="container" >
+        <div class="bg">
+            <div class="rev">
+                <div class="thumb">
+                    <img src="../images/thumbnail.jpg" style="border-radius: 50%; cursor: pointer;" onclick="location.href='../index.html'"/>
+                </div>
+                <button class="arrow left" onclick="prevReview()">&#10094;</button>
+                <div class="comments-container">
+                    <div class="comment">
+                        <p class="cmt">All the faculties are really nice.. My all doubts are cleared..</p>
+                        <p class="star">🌟🌟🌟🌟🌟</p>
+                        <p class="name">Tanishq Shah</p>
+                    </div>
+                    <div class="comment">
+                        <p class="cmt">Great learning experience, highly recommended!</p>
+                        <p class="star">🌟🌟🌟🌟</p>
+                        <p class="name">Raj Mehta</p>
+                    </div>
+                </div>
+
+                <button class="arrow right" onclick="nextReview()">&#10095;</button>
+
+                <div class="add">
+                    <p>Want to add your valuable review..?</p>
+                    <button id="add-review-btn">Add Review</button>
+                </div>
+            </div>
+            <div class="rform">
+                <form id="review-form">
+                    <div class="name">
+                        <label for="name">
+                            <p>Name</p>
+                            <div class="inp">
+                                <input type="text" id="name" name="name" placeholder="Enter name">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="review">
+                        <label for="review">
+                            <p>Review</p>
+                            <div class="inp">
+                                <input type="text" id="review" name="review" placeholder="Add Review">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="rating">
+                        <p>Give Us Rating</p>
+                        <div class="rate">
+                            <input type="radio" name="rating" id="star1" value="1">
+                            <label for="star1"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" id="star2" value="2">
+                            <label for="star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" id="star3" value="3">
+                            <label for="star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" id="star4" value="4">
+                            <label for="star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" id="star5" value="5">
+                            <label for="star5"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+                    <div class="submit-btns">
+                        <button class="submit">Submit</button>
+                        <button class="close">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </div>
+  </div>
+
+    <div class="chat-bot">
+        <div class="chat-icon" id="chatIcon">💬</div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <span>Aura Institute</span>
+                <button id="close-bot">❌</button>
+            </div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type a course name...">
+                <button id="send-bot">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="links">
+                <div class="part">
+                    <img src="../images/thumbnail.jpg" height="200px" width="200px" style="border-radius: 50%;" onclick="location.href='../index.html'">
+                    <p class="foot-title">Aura Institute</p>
+                </div>
+                <div class="part">
+                    <p class="foot-title">Quick Links</p>
+                    <a href="../index.html">Home</a>
+                    <a href="../About/about.html">About Us</a>
+                    <a href="../Course/course.html">Courses</a>
+                    <a href="review.html">Reviews</a>
+                    <a href="../Contact/contact.html">Contact Us</a>
+                </div>
+                <div class="part">
+                    <p class="foot-title">Contact Us</p>
+                    <p>Email: Auraedu777@gmail.com</p>
+                    <p>Phone: +91 9898441664</p>
+                    <p>Address: D/301, Sahjanand Avenue, Naranpura, Ahmedabad</p>
+                </div>
+            </div>
+            <div class="follow">
+                <p class="foot-title">Follow Us !!</p>
+                <a href="https://github.com/Tanishq7361"><img src="../images/github.jpg" alt="GitHub" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://www.linkedin.com/in/tanishq-shah-43825431b/"><img src="../images/linkedin.png" alt="LinkedIn" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://www.instagram.com/tanishq_7307?igsh=cDQ0OHZkODM3d3Jj"><img src="../images/instagram.png" alt="Instagram" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://x.com/"><img src="../images/tweet.jpeg" alt="X(Tweeter)" height="35px" width="35px" style="border-radius: 50%;"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&#169; 2025 Aura Education Institute Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="review.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="contact.css"/>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">
+        <div class="thumbnail">
+            <img src="../images/thumbnail.jpg" height="60px" onclick="location.href='../index.html'" style="border-radius: 50%;" data-aos="fade-down-right" data-aos-duration="1800">
+        </div>
+        <div class="navbar">
+            <div class="navlinks">
+                <a href="../index.html">HOME</a>
+            </div>
+            <div class="navlinks">
+                <a href="../Course/course.html">COURSES</a>
+            </div>
+            <div class="navlinks">
+                <a href="../About/about.html">ABOUT US</a>
+            </div>
+            <div class="navlinks">
+                <a href="../Review/review.html">REVIEWS</a>
+            </div>
+            <div class="navlinks">
+                <a href="../Contact/contact.html">CONTACT US</a>
+            </div>
+            <button class="logout">Login</button>
+        </div>
+    </header>
+
+    <div class="main" data-aos="fade-right" data-aos-duration="1400">
+        <div class="cool">
+            <h1  data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="1000">
+                Admission & Inquiry
+            </h1>
+            <h3  data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="1000">
+                Home / Admission & Inquiry
+            </h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>Admission & Inquiry</h1>
+            <p>The best way to contact us is to use our contact form below. </p><p>Please fill out all of the required fields and we will get back to you as soon as possible.</p>
+        </div>
+        <form>
+            <div class="name">
+                <label for="name">
+                    <p>Full Name</p>
+                    <div class="inp">
+                        <input type="text" id="name" name="name" placeholder="Enter name">
+                    </div>
+                </label>
+            </div>
+            <div class="email">
+                <label for="email">
+                    <p>Email Address</p>
+                    <div class="inp">
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                    </div>
+                </label>
+            </div>
+            <div class="phone">
+                <label for="phone">
+                    <p>Phone Number</p>
+                    <div class="inp">
+                        <input type="text" id="phone" name="phone" placeholder="Password">
+                    </div>
+                </label>
+            </div>
+            <div class="msg">
+                <label for="msg">
+                    <p>Message</p>
+                    <div class="inp">
+                        <textarea id="msg" name="msg" rows="10" cols="139"></textarea>
+                    </div>
+                </label>
+            </div>
+            <div class="submit">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="chat-bot">
+        <div class="chat-icon" id="chatIcon">💬</div>
+    
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <span>Aura Institute</span>
+                <button id="close-bot">❌</button>
+            </div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type a course name...">
+                <button id="send-bot">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="links">
+                <div class="part">
+                    <img src="../images/thumbnail.jpg" height="200px" width="200px" style="border-radius: 50%;" onclick="location.href='../index.html'">
+                    <p class="foot-title">Aura Institute</p>
+                </div>
+                <div class="part">
+                    <p class="foot-title">Quick Links</p>
+                    <a href="../index.html">Home</a>
+                    <a href="../About/about.html">About Us</a>
+                    <a href="../Course/course.html">Courses</a>
+                    <a href="../Review/review.html">Reviews</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="part">
+                    <p class="foot-title">Contact Us</p>
+                    <p>Email: Auraedu777@gmail.com</p>
+                    <p>Phone: +91 9898441664</p>
+                    <p>Address: D/301, Sahjanand Avenue, Naranpura, Ahmedabad</p>
+                </div>
+            </div>
+            <div class="follow">
+                <p class="foot-title">Follow Us !!</p>
+                <a href="https://github.com/Tanishq7361"><img src="../images/github.jpg" alt="GitHub" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://www.linkedin.com/in/tanishq-shah-43825431b/"><img src="../images/linkedin.png" alt="LinkedIn" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://www.instagram.com/tanishq_7307?igsh=cDQ0OHZkODM3d3Jj"><img src="../images/instagram.png" alt="Instagram" height="35px" width="35px" style="border-radius: 50%;"></a>
+                <a href="https://x.com/"><img src="../images/tweet.jpeg" alt="X(Tweeter)" height="35px" width="35px" style="border-radius: 50%;"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&#169; 2025 Aura Education Institute Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="contact.js"></script>
+</body>
+</html>
