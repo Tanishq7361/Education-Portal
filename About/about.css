@@ -404,6 +404,17 @@ header {
 footer {
     color: #f5f5f5;
 }
+.quotee{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #083124;
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 800;
+}
 
 footer .foot {
     background-color: #081b31;

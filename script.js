@@ -218,7 +218,7 @@ const respond = (answer) => {
         if (answer === 'Yes') {
             chatBody.innerHTML += `<br/>
                                     <p>
-                                    🤖 You can contact us at +91 9434783930. Thank you! 😊
+                                    🤖 You can contact us at +91 9898441664. Thank you! 😊
                                     </p>
                                     <br/>`;
         } else {

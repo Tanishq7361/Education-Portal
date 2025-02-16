@@ -339,6 +339,7 @@ header {
 .courses button {
     color: #ffffff;
     background-image: linear-gradient( rgb(187, 1, 187),#15457c);
+    background-image: linear-gradient( rgb(2, 16, 176),#747b16);
     border: #ffffff;
     border-width: 2px;
     border-radius: 0.8rem;
@@ -354,7 +355,6 @@ header {
 .courses button:hover {
     transform: scale(0.9);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient( rgb(181, 3, 181),#134072);
     color: #f5f5f5;
     transition: 1s;
 }
@@ -385,7 +385,7 @@ header {
     height: 100%;
     width: 20%;
     border-radius: 50%;
-    color: #0c0c0c;
+    color: #ffffff;
     border-radius: 0.9rem;
     background-color: #ffffd0d6;
     display: flex;
@@ -397,6 +397,7 @@ header {
     transition: 0.7s;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(rgb(2, 16, 176),#54590e);
 }
 .box img{
     border: 3px solid white;
@@ -434,6 +435,7 @@ header {
     width: 20%;
     /* background-image: linear-gradient(rgb(160, 0, 160), #0d2c50); */
     background-image: linear-gradient( rgb(176, 2, 176),#16457b);
+    background-image: linear-gradient( rgb(2, 16, 176),#747b16);
     /* animation: changer 5s infinite alternate; */
     border: none;
     border-radius: 3rem;
@@ -460,8 +462,8 @@ header {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #ff5722;
-    color: #FFF;
+    background: #4f943a;
+    color: #fd0000;
     width: 50px; 
     height: 50px; 
     border-radius: 50%; 
@@ -470,6 +472,7 @@ header {
     justify-content: center; 
     font-size: 24px; 
     cursor: pointer; 
+    animation: changer 3s infinite alternate;
 }
 
 .chat-container {
@@ -481,6 +484,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
+    border: 2px solid white;
 }
 
 .chat-header {
@@ -492,19 +496,27 @@ header {
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    animation: changer 3s infinite alternate;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    border-bottom: 2px solid white;
 }
 
 .chat-body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     height: 400px;
+    color: white;
+    font-weight: 800;
     overflow-y: auto;
-    background: #f9f9f9;
+    /* border: 2px solid white; */
+    background-image: url('images/revwebback1.jpg');
 }
 
 .chat-footer {
     display: flex;
     padding: 10px;
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #000000;
 }
 
 .chat-footer input {
@@ -518,6 +530,7 @@ header {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    animation: changer 3s infinite alternate;
 }
 
 .buttons {
@@ -538,7 +551,7 @@ header {
     padding: 1rem;
     margin-right: 5rem;
     margin-left: 4rem;
-    background-color: orange;
+    background-color: rgb(0, 60, 255);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -546,7 +559,7 @@ header {
 .no {
     padding: 1rem;
     margin-top: 0.7rem;
-    background-color: green;
+    background-color: rgb(255, 0, 0);
     color: white;
     border-radius: 1rem;
     font-size: 1.2rem;
@@ -561,7 +574,17 @@ header {
 #send-bot {
     border-radius: 0.6rem;
 }
-
+.quote{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #083124;
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 800;
+}
 footer {
     color: #f5f5f5;
 }

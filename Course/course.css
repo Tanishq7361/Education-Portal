@@ -259,7 +259,7 @@ header {
 }
 
 .container .box:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
 
@@ -430,6 +430,22 @@ header {
     transform: scale(0.9);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.restbtn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+.restbtn button{
+    background-image: radial-gradient(red,rgb(0, 0, 0));
+    border-radius: 40%;
+    border: 2px solid white;
+    height: 50px;
+    width: 150px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
 }
 
 footer {

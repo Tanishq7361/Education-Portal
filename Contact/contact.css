@@ -167,7 +167,17 @@ header {
 .container .title p {
     margin-bottom: 0.3rem;
 }
-
+.quote{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #083124;
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 800;
+}
 form {
     border: 2px solid lightgray;
     border-radius: 0.7rem;
