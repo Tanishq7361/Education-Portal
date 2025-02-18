@@ -165,7 +165,7 @@ const sendMessage = () => {
     document.getElementById('chatInput').value = '';
 
     chatBody.scrollTop = chatBody.scrollHeight;
-    
+    // kaka
     setTimeout(() => {
         let botReply = courses[input.toLowerCase()] || `Sorry!
                             <br/>
