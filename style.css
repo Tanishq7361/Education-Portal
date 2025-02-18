@@ -161,7 +161,7 @@ iframe{
 }
 
 body {
-    background-image:url('images/webback10.avif');
+    background-image:url('images/webback11.avif');
     background-size: cover;
     background-attachment: fixed;
     word-spacing: 5px;
@@ -338,8 +338,7 @@ header {
 }
 .courses button {
     color: #ffffff;
-    background-image: linear-gradient( rgb(187, 1, 187),#15457c);
-    background-image: linear-gradient( rgb(2, 16, 176),#747b16);
+    background-image: linear-gradient(rgb(160, 0, 160), #0d2c50);
     border: #ffffff;
     border-width: 2px;
     border-radius: 0.8rem;
@@ -397,7 +396,8 @@ header {
     transition: 0.7s;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(rgb(2, 16, 176),#54590e);
+    /* background-image: linear-gradient(rgb(12, 27, 191),#7e8615); */
+    background-image: linear-gradient(rgb(160, 0, 160), #0d2c50);
 }
 .box img{
     border: 3px solid white;
@@ -434,8 +434,8 @@ header {
     height: 100%;
     width: 20%;
     /* background-image: linear-gradient(rgb(160, 0, 160), #0d2c50); */
-    background-image: linear-gradient( rgb(176, 2, 176),#16457b);
-    background-image: linear-gradient( rgb(2, 16, 176),#747b16);
+    background-image: linear-gradient(rgb(160, 0, 160), #0d2c50);
+    /* background-image: linear-gradient( rgb(2, 16, 176),#747b16); */
     /* animation: changer 5s infinite alternate; */
     border: none;
     border-radius: 3rem;
@@ -462,8 +462,8 @@ header {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #4f943a;
-    color: #fd0000;
+    background: #ff5722;;
+    color: #ffffff;
     width: 50px; 
     height: 50px; 
     border-radius: 50%; 
@@ -472,7 +472,7 @@ header {
     justify-content: center; 
     font-size: 24px; 
     cursor: pointer; 
-    animation: changer 3s infinite alternate;
+    /* animation: changer 3s infinite alternate; */
 }
 
 .chat-container {
@@ -484,11 +484,12 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
+    color: #F5F5F5;
     border: 2px solid white;
 }
 
 .chat-header {
-    background: #ff5722;
+    background: #b222ff;
     color: white;
     padding: 10px;
     display: flex;
@@ -496,7 +497,7 @@ header {
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    animation: changer 3s infinite alternate;
+    /* animation: changer 3s infinite alternate; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     border-bottom: 2px solid white;
@@ -506,17 +507,19 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     height: 400px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 800;
     overflow-y: auto;
     /* border: 2px solid white; */
-    background-image: url('images/revwebback1.jpg');
+    background-image: url('images/login3.webp');
+    animation: changer 4s infinite linear;
 }
 
 .chat-footer {
     display: flex;
     padding: 10px;
     border-top: 2px solid #000000;
+    background:transparent;
 }
 
 .chat-footer input {
@@ -525,12 +528,12 @@ header {
 }
 
 .chat-footer button {
-    background: #ff5722;
+    background: #de22ff;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    animation: changer 3s infinite alternate;
+    /* animation: changer 3s infinite alternate; */
 }
 
 .buttons {
@@ -551,7 +554,8 @@ header {
     padding: 1rem;
     margin-right: 5rem;
     margin-left: 4rem;
-    background-color: rgb(0, 60, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -559,8 +563,8 @@ header {
 .no {
     padding: 1rem;
     margin-top: 0.7rem;
-    background-color: rgb(255, 0, 0);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -569,6 +573,7 @@ header {
     margin-right: 5px;
     padding: 5px;
     border-radius: 0.6rem;
+    
 }
 
 #send-bot {

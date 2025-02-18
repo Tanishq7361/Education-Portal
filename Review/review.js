@@ -56,6 +56,10 @@ const nextReview = () => {
 showReview(currentIndex);
 
 document.querySelector(".submit").addEventListener("click", (event) => {
+    if(!loggedIn){
+        alert("Please Login first");
+        return;
+    }
     event.preventDefault();
 
     let name = document.getElementById("name").value.trim();

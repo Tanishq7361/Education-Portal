@@ -3,7 +3,7 @@
 document.getElementById("resetBtn").addEventListener("click", () => {
     if (confirm("Are you sure you want to reset everything? This cannot be undone!")) {
         localStorage.clear();
-        localStorage.setItem("coins", "10000");
+        localStorage.setItem("coins", "5000");
         localStorage.setItem("purchased", JSON.stringify({}));
 
         document.querySelectorAll(".btns .buy").forEach(btn => {
@@ -15,7 +15,9 @@ document.getElementById("resetBtn").addEventListener("click", () => {
             openBtn.style.display = "none";
         });
 
+
         courseButtons();
+        updateCoins();
     }
 });
 
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!localStorage.getItem("coins")) {
-        localStorage.setItem("coins", "10000");
+        localStorage.setItem("coins", "5000");
     }
 
     if (!localStorage.getItem("purchased")) {
@@ -70,6 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             openBtn.style.display = "inline-block";
             updateCoins();
+        }
+        else if(!purchased[name] && coins < price){
+            alert("You are to poor to buy");
         }
     };
 
@@ -236,10 +241,9 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.innerText = purchased[name] ? "Enrolled" : (price === 0 ? "Enroll" : "Buy with Coins");
             btn.disabled = purchased[name];
 
-            btn.onclick = () => {
+            btn.addEventListener( "click", () => {
                 courseClick(name, price, topics, btn, openBtn);
-            }
-
+            });
             course.querySelector(".btns").appendChild(openBtn);
         });
     };

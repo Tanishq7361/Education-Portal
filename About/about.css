@@ -316,7 +316,9 @@ header {
     bottom: 20px;
     right: 20px;
     width: 330px;
+    color: #F5F5F5;
     background: white;
+    /* background-image: url('../images/login3.webp'); */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
@@ -338,6 +340,8 @@ header {
     height: 400px;
     overflow-y: auto;
     background: #f9f9f9;
+    background-image: url('../images/login3.webp');
+    animation: changer 4s infinite linear;
 }
 
 .chat-footer {
@@ -377,7 +381,8 @@ header {
     padding: 1rem;
     margin-right: 5rem;
     margin-left: 4rem;
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -385,8 +390,8 @@ header {
 .no {
     padding: 1rem;
     margin-top: 0.7rem;
-    background-color: green;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }

@@ -265,13 +265,12 @@ input {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    color: #F5F5F5;
     width: 330px;
-    background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
 }
-
 .chat-header {
     background: #ff5722;
     color: white;
@@ -288,12 +287,15 @@ input {
     height: 400px;
     overflow-y: auto;
     background: #f9f9f9;
+    background-image: url('../images/login3.webp');
+    animation: changer 4s infinite linear;
 }
 
 .chat-footer {
     display: flex;
     padding: 10px;
     border-top: 1px solid #ddd;
+    background-color: #F5F5F5;
 }
 
 .chat-footer input {
@@ -327,7 +329,8 @@ input {
     padding: 1rem;
     margin-right: 5rem;
     margin-left: 4rem;
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -335,8 +338,8 @@ input {
 .no {
     padding: 1rem;
     margin-top: 0.7rem;
-    background-color: green;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }

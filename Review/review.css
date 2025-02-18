@@ -133,7 +133,7 @@ header {
 }
 
 .main {
-    background-image: url("../images/revwebback2.avif");
+    background-image: url("../images/review.jpg");
     background-position: center;
     background-size: cover;
     
@@ -167,7 +167,7 @@ header {
 .bg {
     height: 100%;
     width: 100%;
-    background-color: rgba(3, 60, 13, 0.7);
+    background-color: rgba(10, 43, 92, 0.7);
     padding: 3rem;
     color: #ffffff;
     font-size: 1.5rem;
@@ -238,15 +238,15 @@ header {
     align-items: center;
     flex-direction: column;
     font-size: 2rem;
-    color: brown;
+    color: rgb(255, 255, 255);
 }
 
 .bg .rev .add button {
     padding: 1rem;
     margin-top: 3rem;
-    background-color: #e94b31;
-    border: none;
-    border-radius: 10px;
+    background-image: linear-gradient(rgb(0, 179, 255),rgb(0, 255, 145));
+    border: 2px solid white;
+    border-radius: 20px;
     font-size: 2rem;
     cursor: pointer;
     font-weight: 500;
@@ -259,6 +259,7 @@ header {
     background-color: #f5f5f5;
     color: #000000;
     transform: scale(0.95);
+    box-shadow: 0 0 10px 0 #000000a4;
     transition: all 0.5s ease-in-out;
 }
 
@@ -297,7 +298,7 @@ input {
     margin: 0.5rem;
     margin-right: 1rem;
     width: 7rem;
-    background-color: #e94b31;
+    background-image: linear-gradient(rgb(0, 179, 255),rgb(0, 255, 145));
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
     transition: all 0.5s ease-in-out;
 }
@@ -366,8 +367,9 @@ input {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    color: white;
     width: 330px;
-    background: white;
+    /* background-image: url('../images/login3.webp'); */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
@@ -389,17 +391,22 @@ input {
     height: 400px;
     overflow-y: auto;
     background: #f9f9f9;
+    background-image: url('../images/login3.webp');
+    animation: changer 4s infinite linear;
 }
 
 .chat-footer {
+    /* height: 50px; */
     display: flex;
     padding: 10px;
+    background-color: #F5F5F5;
     border-top: 1px solid #ddd;
 }
 
 .chat-footer input {
     flex: 1;
     padding: 5px;
+    background-color: #F5F5F5;
 }
 
 .chat-footer button {
@@ -408,7 +415,9 @@ input {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    
 }
+
 
 .buttons {
     display: flex;
@@ -428,7 +437,8 @@ input {
     padding: 1rem;
     margin-right: 5rem;
     margin-left: 4rem;
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -436,8 +446,8 @@ input {
 .no {
     padding: 1rem;
     margin-top: 0.7rem;
-    background-color: green;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
@@ -449,6 +459,7 @@ input {
 }
 
 #send-bot {
+    height: 30px;
     border-radius: 0.6rem;
 }
 
