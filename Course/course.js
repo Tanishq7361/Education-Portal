@@ -3,7 +3,7 @@
 document.getElementById("resetBtn").addEventListener("click", () => {
     if (confirm("Are you sure you want to reset everything? This cannot be undone!")) {
         localStorage.clear();
-        localStorage.setItem("coins", "5000");
+        localStorage.setItem("Aura", "5000");
         localStorage.setItem("purchased", JSON.stringify({}));
 
         document.querySelectorAll(".btns .buy").forEach(btn => {
@@ -17,7 +17,7 @@ document.getElementById("resetBtn").addEventListener("click", () => {
 
 
         courseButtons();
-        updateCoins();
+        updateAura();
     }
 });
 
@@ -44,26 +44,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    if (!localStorage.getItem("coins")) {
-        localStorage.setItem("coins", "5000");
+    if (!localStorage.getItem("Aura")) {
+        localStorage.setItem("Aura", "5000");
     }
 
     if (!localStorage.getItem("purchased")) {
         localStorage.setItem("purchased", JSON.stringify({}));
     }
 
-    const updateCoins = () => {
-        document.querySelector(".coins").textContent = "Coins: " + localStorage.getItem("coins");
+    const updateAura = () => {
+        document.querySelector(".Aura").textContent = "Aura: " + localStorage.getItem("Aura");
     };
 
-    updateCoins();
+    updateAura();
 
     const courseClick = (name, price, topics, btn, openBtn) => {
-        let coins = parseInt(localStorage.getItem("coins"));
+        let Aura = parseInt(localStorage.getItem("Aura"));
         let purchased = JSON.parse(localStorage.getItem("purchased"));
 
-        if (!purchased[name] && (price === 0 || coins >= price)) {
-            if (price > 0) localStorage.setItem("coins", coins - price);
+        if (!purchased[name] && (price === 0 || Aura >= price)) {
+            if (price > 0) localStorage.setItem("Aura", Aura - price);
             purchased[name] = new Array(topics.length).fill(false);
             localStorage.setItem("purchased", JSON.stringify(purchased));
 
@@ -71,10 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.disabled = true;
 
             openBtn.style.display = "inline-block";
-            updateCoins();
+            updateAura();
         }
-        else if(!purchased[name] && coins < price){
-            alert("You are to poor to buy");
+        else if(!purchased[name] && Aura < price){
+            alert("You have to increase your aura to join this course");
         }
     };
 
@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class='popup-content'>
 
                 <h2>${name} Progress</h2>
+                <p id="completeMsg"></p>
 
                 <div class="checkboxes">
                     ${topics.map((t, i) => `
@@ -162,6 +163,11 @@ document.addEventListener("DOMContentLoaded", () => {
             let pr = percentage !== 0 ? percentage - (percentage / 11) : 0;
             progressBar.style.width = pr + "%";
             percentageBar.textContent = percentage + "%";
+            if(percentage == 100) {
+                document.querySelector("#completeMsg").innerText = `🎉 Congratulations! You have completed this course successfully! 🥳`;
+            } else {
+                document.querySelector("#completeMsg").innerText = "";
+            }
         }
     };
 
@@ -238,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
             }
             
-            btn.innerText = purchased[name] ? "Enrolled" : (price === 0 ? "Enroll" : "Buy with Coins");
+            btn.innerText = purchased[name] ? "Enrolled" : (price === 0 ? "Enroll" : "Buy with Aura");
             btn.disabled = purchased[name];
 
             btn.addEventListener( "click", () => {
@@ -254,18 +260,18 @@ document.addEventListener("DOMContentLoaded", () => {
 let defaultMsgTimeout;
 
 const courses = {
-    'java': 'The Tally course costs ₹500 and takes 3 months. Do you want to continue?',
-    'c++': 'The Digital Marketing course costs ₹700 and takes 4 months.',
-    'python': 'The Xero course costs ₹600 and takes 3 months.',
-    'react-js': 'The Sage course costs ₹550 and takes 3 months.',
-    'trading': 'The Qbook course costs ₹650 and takes 3 months.',
-    'calculus': 'The Myob course costs ₹620 and takes 3 months.',
-    'dsa': 'The Tally course costs ₹500 and takes 3 months. Do you want to continue?',
-    'cyber-security': 'The Digital Marketing course costs ₹700 and takes 4 months.',
-    'electronics': 'The Xero course costs ₹600 and takes 3 months.',
-    'upsc': 'The Sage course costs ₹550 and takes 3 months.',
-    'quantum-computing': 'The Qbook course costs ₹650 and takes 3 months.',
-    'history': 'The Myob course costs ₹620 and takes 3 months.'
+    'java': 'The Java course costs ₹969 and takes 3 months. Do you want to continue?',
+    'c++': 'The C++ course costs ₹999++ and takes 4 months. Jindagi badal jayegi Do you want to continue ?',
+    'python': 'The Python course costs ₹777 and takes 3 months.',
+    'react-js': 'The React-Js course costs ₹199 and takes 3 months.',
+    'trading': 'The Trading course costs ₹420 and takes 3 months.',
+    'calculus': 'The Calculus course is absolutely free and takes 3 months.',
+    'dsa': 'The DSA course costs ₹700 and takes 3 months. Do you want to continue?',
+    'cyber-security': 'The Cyber-security course is absolutely free and takes 4 months.',
+    'electronics': 'The Electronics course costs ₹299 and takes 3 months.',
+    'upsc': 'The UPSC course costs ₹1999 and takes 3 months.',
+    'quantum-computing': 'The Quantum-computing course costs ₹1000 and takes 3 months.',
+    'history': 'The History course is absolutely free and takes 3 months.'
 };
 
 const openChat = () => {

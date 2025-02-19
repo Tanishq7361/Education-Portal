@@ -21,18 +21,18 @@ if(loggedIn) {
 let defaultMsgTimeout;
 
 const courses = {
-    'java': 'The Tally course costs ₹500 and takes 3 months. Do you want to continue?',
-    'c++': 'The Digital Marketing course costs ₹700 and takes 4 months.',
-    'python': 'The Xero course costs ₹600 and takes 3 months.',
-    'react-js': 'The Sage course costs ₹550 and takes 3 months.',
-    'trading': 'The Qbook course costs ₹650 and takes 3 months.',
-    'calculus': 'The Myob course costs ₹620 and takes 3 months.',
-    'dsa': 'The Tally course costs ₹500 and takes 3 months. Do you want to continue?',
-    'cyber-security': 'The Digital Marketing course costs ₹700 and takes 4 months.',
-    'electronics': 'The Xero course costs ₹600 and takes 3 months.',
-    'upsc': 'The Sage course costs ₹550 and takes 3 months.',
-    'quantum-computing': 'The Qbook course costs ₹650 and takes 3 months.',
-    'history': 'The Myob course costs ₹620 and takes 3 months.'
+    'java': 'The Java course costs ₹969 and takes 3 months. Do you want to continue?',
+    'c++': 'The C++ course costs ₹999++ and takes 4 months. Jindagi badal jayegi Do you want to continue ?',
+    'python': 'The Python course costs ₹777 and takes 3 months.',
+    'react-js': 'The React-Js course costs ₹199 and takes 3 months.',
+    'trading': 'The Trading course costs ₹420 and takes 3 months.',
+    'calculus': 'The Calculus course is absolutely free and takes 3 months.',
+    'dsa': 'The DSA course costs ₹700 and takes 3 months. Do you want to continue?',
+    'cyber-security': 'The Cyber-security course is absolutely free and takes 4 months.',
+    'electronics': 'The Electronics course costs ₹299 and takes 3 months.',
+    'upsc': 'The UPSC course costs ₹1999 and takes 3 months.',
+    'quantum-computing': 'The Quantum-computing course costs ₹1000 and takes 3 months.',
+    'history': 'The History course is absolutely free and takes 3 months.'
 };
 
 const openChat = () => {
