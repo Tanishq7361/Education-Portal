@@ -31,3 +31,6 @@ The **Education Portal** is a web-based learning platform designed to provide in
    ```
 2. **Open index.html in a browser.**
 3. **To modify, edit the HTML, CSS, and JavaScript files as needed.**
+
+## License
+This project is licensed under the **MIT License.** 
